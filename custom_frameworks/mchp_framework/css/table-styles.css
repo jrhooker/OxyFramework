@@ -1,0 +1,25 @@
+*[class~='topic/table'] > *[class~='topic/tgroup'] > *[class~='topic/tbody'] > *[class~='topic/row']:nth-child(even) {
+  background-color: #eaeaea;
+  }
+
+*[class~='topic/table'][outputclass~='nozebra']> *[class~='topic/tgroup'] > *[class~='topic/tbody'] > *[class~='topic/row']:nth-child(even) {
+  background-color: #ffffff;
+  }
+  
+  *[class~='topic/table'][outputclass~='nocolor']> *[class~='topic/tgroup'] > *[class~='topic/tbody'] > *[class~='topic/row'] {
+  background-color: #ffffff;
+  }
+  
+  *[class~='topic/table'][outputclass~='headercolumn']> *[class~='topic/tgroup'] > *[class~='topic/tbody'] > *[class~='topic/row'] > *[class~='topic/entry']:nth-child(1) {
+ background-color : #b7b7b7 ;
+  }
+  
+  *[class~='topic/thead'] {
+background-color : #b7b7b7;
+}
+ 
+ 
+*[class~='topic/entry'][rotate~='1'] { 
+  writing-mode: vertical-rl;
+text-orientation: mixed;
+}
