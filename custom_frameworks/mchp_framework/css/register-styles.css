@@ -1,0 +1,40 @@
+*[class~='sidsc-register/registerNameMore']:before, *[class~='sidsc-register/registerNameFull']:before { 
+  content: '';
+}
+
+*[class~='sidsc-register/registerNameMore'] {
+ display : table-row ;
+border-collapse : collapse ;
+border-bottom-width : thin ;
+border-bottom-style : solid ;
+border-left-width : thin ;
+border-left-style : solid ;
+border-right-width : thin ;
+border-right-style : solid ;
+border-top-width : thin ;
+border-top-style : solid ;
+margin-top : 0.5em ;
+margin-right : 0 ;
+margin-bottom : 0.5em ;
+margin-left : 0 ;
+vertical-align : middle ;
+}
+
+*[class~='sidsc-register/registerNameFull']:before {  
+  content : 'HELP' ;
+   
+
+}
+
+*[class~='sidsc-register/registerNameFull'], *[class~='sidsc-register/registerBriefDescription'] {  
+  display : table-cell ;
+ 
+  vertical-align : inherit ;
+
+  border-bottom-style: solid;
+  border-bottom-width: 1pt;
+  border-bottom-color: black;
+
+}
+ 
+
