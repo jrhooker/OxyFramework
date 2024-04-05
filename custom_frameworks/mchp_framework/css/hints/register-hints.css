@@ -1,0 +1,19 @@
+@namespace oxy "http://www.oxygenxml.com/extensions/author";
+/* colors as variables */
+/*#FFFAD5*/
+/*#FFD34E*/
+/* before layer used for hints */
+/* hints styles */
+*:before(201) {
+  border: 1px solid #d89e36;
+  background-color: rgba(255, 250, 213, 0.6);
+}
+/* define mixins */
+/* Hints and placeholders */
+/* EXM-41121: don't let the hints go to PDF. */
+@media oxygen {
+  /* Topic types */
+  
+  
+ 
+}

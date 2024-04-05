@@ -1,0 +1,157 @@
+
+a.in-author-help {
+    border-color: red;
+}
+
+*[class~='topic/note'][type~='danger']:before(201) {
+    display: inline;
+    font-family: arial, helvetica, sans-serif;
+    line-height: 1rem;
+    margin-top: 0.4em;
+    margin-bottom: 0.2em;
+    content: oxy_htmlContent(href, 'note-hints.html', id, oxy_concat('notes-hints-danger', '-', oxy_local-name()), width, 100%);
+  } 
+ 
+  *[class~='topic/note'][type~='warning']:before(201) {
+    display: inline;
+    font-family: arial, helvetica, sans-serif;
+    line-height: 1rem;
+    margin-top: 0.4em;
+    margin-bottom: 0.2em;
+    content: oxy_htmlContent(href, 'note-hints.html', id, oxy_concat('notes-hints-warning', '-', oxy_local-name()), width, 100%);
+  }
+ 
+ 
+  
+  *[class~='topic/note'][type~='caution']:before(201) {
+    display: inline;
+    font-family: arial, helvetica, sans-serif;
+    line-height: 1rem;
+    margin-top: 0.4em;
+    margin-bottom: 0.2em;
+    content: oxy_htmlContent(href, 'note-hints.html', id, oxy_concat('notes-hints-caution', '-', oxy_local-name()), width, 100%);
+  }
+ 
+ *[class~='topic/note'][type~='notice']:before(201) {
+    display: inline;
+    font-family: arial, helvetica, sans-serif;
+    line-height: 1rem;
+    margin-top: 0.4em;
+    margin-bottom: 0.2em;
+    content: oxy_htmlContent(href, 'note-hints.html', id, oxy_concat('notes-hints-notice', '-', oxy_local-name()), width, 100%);
+  }
+
+ *[class~='topic/note'][type~='attention']:before(201) {
+    display: inline;
+    font-family: arial, helvetica, sans-serif;
+    line-height: 1rem;
+    margin-top: 0.4em;
+    margin-bottom: 0.2em;
+    content: oxy_htmlContent(href, 'note-hints.html', id, oxy_concat('notes-hints-attention', '-', oxy_local-name()), width, 100%);
+  }
+ 
+  *[class~='topic/note'][type~='fastpath']:before(201) {
+    display: inline;
+    font-family: arial, helvetica, sans-serif;
+    line-height: 1rem;
+    margin-top: 0.4em;
+    margin-bottom: 0.2em;
+    content: oxy_htmlContent(href, 'note-hints.html', id, oxy_concat('notes-hints-fastpath', '-', oxy_local-name()), width, 100%);
+  } 
+  
+   *[class~='topic/note'][type~='important']:before(201) {
+    display: inline;
+    font-family: arial, helvetica, sans-serif;
+    line-height: 1rem;
+    margin-top: 0.4em;
+    margin-bottom: 0.2em;
+    content: oxy_htmlContent(href, 'note-hints.html', id, oxy_concat('notes-hints-important', '-', oxy_local-name()), width, 100%);
+  }
+  
+   *[class~='topic/note'][type~='remember']:before(201) {
+    display: inline;
+    font-family: arial, helvetica, sans-serif;
+    line-height: 1rem;
+    margin-top: 0.4em;
+    margin-bottom: 0.2em;
+    content: oxy_htmlContent(href, 'note-hints.html', id, oxy_concat('notes-hints-remember', '-', oxy_local-name()), width, 100%);
+  }
+  
+   *[class~='topic/note'][type~='restriction']:before(201) {
+    display: inline;
+    font-family: arial, helvetica, sans-serif;
+    line-height: 1rem;
+    margin-top: 0.4em;
+    margin-bottom: 0.2em;
+    content: oxy_htmlContent(href, 'note-hints.html', id, oxy_concat('notes-hints-restriction', '-', oxy_local-name()), width, 100%);
+  }
+  
+   *[class~='topic/note'][type~='tip']:before(201) {
+    display: inline;
+    font-family: arial, helvetica, sans-serif;
+    line-height: 1rem;
+    margin-top: 0.4em;
+    margin-bottom: 0.2em;
+    content: oxy_htmlContent(href, 'note-hints.html', id, oxy_concat('notes-hints-tip', '-', oxy_local-name()), width, 100%);
+  }
+  
+   *[class~='topic/note'][type~='trouble']:before(201) {
+    display: inline;
+    font-family: arial, helvetica, sans-serif;
+    line-height: 1rem;
+    margin-top: 0.4em;
+    margin-bottom: 0.2em;
+    content: oxy_htmlContent(href, 'note-hints.html', id, oxy_concat('notes-hints-trouble', '-', oxy_local-name()), width, 100%);
+  }
+  
+   *[class~='topic/note'][othertype~='todo']:before(201) {
+    display: inline;
+    font-family: arial, helvetica, sans-serif;
+    line-height: 1rem;
+    margin-top: 0.4em;
+    margin-bottom: 0.2em;
+    content: oxy_htmlContent(href, 'note-hints.html', id, oxy_concat('notes-hints-todo', '-', oxy_local-name()), width, 100%);
+  }
+  
+     *[class~='topic/note'][othertype~='info']:before(201) {
+    display: inline;
+    font-family: arial, helvetica, sans-serif;
+    line-height: 1rem;
+    margin-top: 0.4em;
+    margin-bottom: 0.2em;
+    content: oxy_htmlContent(href, 'note-hints.html', id, oxy_concat('notes-hints-info', '-', oxy_local-name()), width, 100%);
+  }
+  
+   *[class~='topic/note'][othertype~='result']:before(201) {
+    display: inline;
+    font-family: arial, helvetica, sans-serif;
+    line-height: 1rem;
+    margin-top: 0.4em;
+    margin-bottom: 0.2em;
+    content: oxy_htmlContent(href, 'note-hints.html', id, oxy_concat('notes-hints-result', '-', oxy_local-name()), width, 100%);
+  }
+  
+    *[class~='topic/note'][othertype~='execute']:before(201) {
+    display: inline;
+    font-family: arial, helvetica, sans-serif;
+    line-height: 1rem;
+    margin-top: 0.4em;
+    margin-bottom: 0.2em;
+    content: oxy_htmlContent(href, 'note-hints.html', id, oxy_concat('notes-hints-execute', '-', oxy_local-name()), width, 100%);
+  }
+  
+  
+   *[class~='topic/note']:before(201) {
+    display: inline;
+    font-family: arial, helvetica, sans-serif;
+    line-height: 1rem;
+    margin-top: 0.4em;
+    margin-bottom: 0.2em;
+    content: oxy_htmlContent(href, 'note-hints.html', id, oxy_concat('notes-hints', '-', oxy_local-name()), width, 100%);
+  }
+  
+ 
+  
+ 
+  
+  
