@@ -18,10 +18,13 @@
   vertical-align:middle;
 }
 
+<<<<<<< HEAD
 *[class~='topic/table']:before {
     display: inline;
     font-family: arial, helvetica, sans-serif;    
     padding: 2mm;
   }
 
+=======
+>>>>>>> 59dd0e48714a30ba49b3846028c2dd6d88c49890
 
