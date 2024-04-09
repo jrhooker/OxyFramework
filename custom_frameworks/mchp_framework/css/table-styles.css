@@ -2,22 +2,61 @@
   background-color: #eaeaea;
   }
 
+
+
+
+*[class~='topic/table'][outputclass~='nozebra']:before {    
+    content: oxy_htmlContent(href, 'table-hints.html', id, oxy_concat('table-hints', '-nozebra'));
+  }
+
 *[class~='topic/table'][outputclass~='nozebra']> *[class~='topic/tgroup'] > *[class~='topic/tbody'] > *[class~='topic/row']:nth-child(even) {
   background-color: #ffffff;
   }
   
-  *[class~='topic/table'][outputclass~='nocolor']> *[class~='topic/tgroup'] > *[class~='topic/tbody'] > *[class~='topic/row'] {
+  *[class~='topic/table'][outputclass~='headercolumn'] {
+
+  }
+  
+ *[class~='topic/table'][outputclass~='headercolumn']:before { 
+  color: yellow;
+    content: oxy_htmlContent(href, 'table-hints.html', id, oxy_concat('table-hints', '-headercolumn'));
+  }
+ 
+  *[class~='topic/table'][outputclass~='widetable'] {
+ background-color : #b7b7b7 ;
+  }
+  
+   *[class~='topic/table'][outputclass~='widetable']:before {
+    content: oxy_htmlContent(href, 'table-hints.html', id, oxy_concat('table-hints', '-widetable'));
+  }
+ 
+  *[class~='topic/table'][outputclass~='widetablenozebra'] {
   background-color: #ffffff;
   }
   
-  *[class~='topic/table'][outputclass~='headercolumn']> *[class~='topic/tgroup'] > *[class~='topic/tbody'] > *[class~='topic/row'] > *[class~='topic/entry']:nth-child(1) {
- background-color : #b7b7b7 ;
+   *[class~='topic/table'][outputclass~='widetablenozebra']:before {
+    content: oxy_htmlContent(href, 'table-hints.html', id, oxy_concat('table-hints', '-widetablenozebra'));
+  }
+  
+   *[class~='topic/table'][outputclass~='rotatepage'] {
+  background-color: #ffffff;
+  }
+  
+   *[class~='topic/table'][outputclass~='rotatepage']:before {
+    content: oxy_htmlContent(href, 'table-hints.html', id, oxy_concat('table-hints', '-rotatepage'));
+  }
+ 
+   *[class~='topic/table'][outputclass~='rotatepage '] {
+  background-color: #ffffff;
+  }
+  
+   *[class~='topic/table'][outputclass~='landscapetable']:before {
+    content: oxy_htmlContent(href, 'table-hints.html', id, oxy_concat('table-hints', '-landscapetable'));
   }
   
   *[class~='topic/thead'] {
 background-color : #b7b7b7;
 }
- 
  
 *[class~='topic/entry'][rotate~='1'] { 
   writing-mode: vertical-rl;

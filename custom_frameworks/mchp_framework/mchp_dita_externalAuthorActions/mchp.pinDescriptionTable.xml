@@ -5,10 +5,6 @@
   id="mchp.pinDescriptionTable">
   <a:name>Insert Pin Description Table</a:name>
   <a:description>Insert a Pin Description Table...</a:description>
-  <a:smallIconPath
-    href="file:/C:/Program%20Files/Oxygen%20XML%20Author%2023/frameworks/dita/img/DitaTableList16.png"/>
-  <a:largeIconPath
-    href="file:/C:/Program%20Files/Oxygen%20XML%20Author%2023/frameworks/dita/img/DitaTableList16@2x.png"/>
   <a:operations>
     <a:operation id="InsertFragmentOperation">
       <a:xpathCondition>oxy:allows-child-element('*', 'class', ' topic/table ')</a:xpathCondition>
