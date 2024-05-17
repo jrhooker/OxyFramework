@@ -654,6 +654,180 @@
 									</poPatch>
 									<poPatch>
 										<field name="fieldPath">
+											<String>authorExtensionDescriptor/actionDescriptors</String>
+										</field>
+										<field name="index">
+											<Integer>99</Integer>
+										</field>
+										<field name="value">
+											<action>
+												<field name="id">
+													<String>mchp.edit.attributes</String>
+												</field>
+												<field name="name">
+													<String>Edit Attributes</String>
+												</field>
+												<field name="description">
+													<String></String>
+												</field>
+												<field name="largeIconPath">
+													<String></String>
+												</field>
+												<field name="smallIconPath">
+													<String></String>
+												</field>
+												<field name="accessKey">
+													<String></String>
+												</field>
+												<field name="accelerator">
+													<null/>
+												</field>
+												<field name="actionModes">
+													<actionMode-array>
+														<actionMode>
+															<field name="xpathCondition">
+																<String></String>
+															</field>
+															<field name="argValues">
+																<serializableOrderedMap>
+																	<entry>
+																		<String>script</String>
+																		<String>function doOperation() {
+    keys = Packages.java.lang.reflect.Array.newInstance(java.lang.String, 3);
+    keys[0] = "k1";
+    keys[1] = "k2";
+    keys[2] = "k3";
+    //Ask user for new value for key attribute.
+    newKeyValue = Packages.javax.swing.JOptionPane.showInputDialog
+    (null, "Input key value",
+        "Key Value",
+        Packages.javax.swing.JOptionPane.QUESTION_MESSAGE, 
+        null, 
+        keys, 
+        keys[0]);
+    if (newKeyValue != null) {
+        authorAccess.getDocumentController().insertXMLFragment
+        ("&lt;part key='" + newKeyValue + "' count='' pname=''/>", authorAccess.getEditorAccess().getCaretOffset());
+    }
+}
+</String>
+																	</entry>
+																</serializableOrderedMap>
+															</field>
+															<field name="operationID">
+																<String>ro.sync.ecss.extensions.commons.operations.JSOperation</String>
+															</field>
+														</actionMode>
+													</actionMode-array>
+												</field>
+												<field name="enabledInReadOnlyContext">
+													<Boolean>false</Boolean>
+												</field>
+											</action>
+										</field>
+										<field name="patchHandling">
+											<String>addIndex</String>
+										</field>
+										<field name="anchor">
+											<null/>
+										</field>
+									</poPatch>
+									<poPatch>
+										<field name="fieldPath">
+											<String>authorExtensionDescriptor/actionDescriptors</String>
+										</field>
+										<field name="index">
+											<Integer>100</Integer>
+										</field>
+										<field name="value">
+											<action>
+												<field name="id">
+													<String>mchp.split.tables</String>
+												</field>
+												<field name="name">
+													<String>Split the current table at the</String>
+												</field>
+												<field name="description">
+													<String></String>
+												</field>
+												<field name="largeIconPath">
+													<String></String>
+												</field>
+												<field name="smallIconPath">
+													<String></String>
+												</field>
+												<field name="accessKey">
+													<String></String>
+												</field>
+												<field name="accelerator">
+													<null/>
+												</field>
+												<field name="actionModes">
+													<actionMode-array>
+														<actionMode>
+															<field name="xpathCondition">
+																<String></String>
+															</field>
+															<field name="argValues">
+																<serializableOrderedMap>
+																	<entry>
+																		<String>script</String>
+																		<String>function doOperation(){
+    current = authorAccess.getDocumentController().getNodeAtOffset(authorAccess.getEditorAccess().getCaretOffset()); 
+    tableNode = null;
+    rowNode = null;
+    while(current != null) {
+      if(tableNode == null &amp;&amp; ("table".equals(current.getName()) || "informaltable".equals(current.getName()))) {
+        tableNode = current;
+      }
+      if(rowNode == null &amp;&amp; ("row".equals(current.getName()) || "strow".equals(current.getName()))) {
+        rowNode = current;
+      }
+      current = current.getParent();
+    }
+    if(tableNode != null &amp;&amp; rowNode != null) {
+      //Create a fragment starting from the row to the end of the table
+      secondTable = authorAccess.getDocumentController().createDocumentFragment(rowNode.getStartOffset(), tableNode.getEndOffset());
+      //Delete the content from the first table.
+      authorAccess.getDocumentController().delete(rowNode.getStartOffset(), tableNode.getEndOffset() - 1);
+      //Insert the second table.
+      authorAccess.getDocumentController().insertFragment(tableNode.getEndOffset() + 1, secondTable);
+    }
+}</String>
+																	</entry>
+																</serializableOrderedMap>
+															</field>
+															<field name="operationID">
+																<String>ro.sync.ecss.extensions.commons.operations.JSOperation</String>
+															</field>
+														</actionMode>
+														<actionMode>
+															<field name="xpathCondition">
+																<String></String>
+															</field>
+															<field name="argValues">
+																<serializableOrderedMap/>
+															</field>
+															<field name="operationID">
+																<String></String>
+															</field>
+														</actionMode>
+													</actionMode-array>
+												</field>
+												<field name="enabledInReadOnlyContext">
+													<Boolean>false</Boolean>
+												</field>
+											</action>
+										</field>
+										<field name="patchHandling">
+											<String>addIndex</String>
+										</field>
+										<field name="anchor">
+											<null/>
+										</field>
+									</poPatch>
+									<poPatch>
+										<field name="fieldPath">
 											<String>authorExtensionDescriptor/menubarDescriptor/menuEntriesDescriptorList/[12]/menuEntriesDescriptorList</String>
 										</field>
 										<field name="index">
@@ -740,6 +914,11 @@
 													<toolbarEntry-array>
 														<toolbarItem>
 															<field name="actionID">
+																<String>mchp.split.tables</String>
+															</field>
+														</toolbarItem>
+														<toolbarItem>
+															<field name="actionID">
 																<String>mchp.pinDescriptionTable</String>
 															</field>
 														</toolbarItem>
@@ -781,6 +960,27 @@
 													</toolbarEntry-array>
 												</field>
 											</toolbar>
+										</field>
+										<field name="patchHandling">
+											<String>addIndex</String>
+										</field>
+										<field name="anchor">
+											<null/>
+										</field>
+									</poPatch>
+									<poPatch>
+										<field name="fieldPath">
+											<String>authorExtensionDescriptor/toolbarDescriptor/toolbarEntriesDescriptorList</String>
+										</field>
+										<field name="index">
+											<Integer>4</Integer>
+										</field>
+										<field name="value">
+											<toolbarItem>
+												<field name="actionID">
+													<String>mchp.edit.attributes</String>
+												</field>
+											</toolbarItem>
 										</field>
 										<field name="patchHandling">
 											<String>addIndex</String>
@@ -2234,212 +2434,6 @@ oxy:allows-global-element("*", "class", " topic/simpletable ")</String>
 													</field>
 													<field name="operationID">
 														<String>ro.sync.ecss.extensions.dita.topic.InsertImageOperation</String>
-													</field>
-												</actionMode>
-											</actionMode-array>
-										</field>
-										<field name="enabledInReadOnlyContext">
-											<Boolean>false</Boolean>
-										</field>
-									</action>
-									<action>
-										<field name="id">
-											<String>insert.intent.question</String>
-										</field>
-										<field name="name">
-											<String>${i18n(insert.intent.question)}</String>
-										</field>
-										<field name="description">
-											<String>${i18n(insert.intent.question_description)}</String>
-										</field>
-										<field name="largeIconPath">
-											<String></String>
-										</field>
-										<field name="smallIconPath">
-											<String></String>
-										</field>
-										<field name="accessKey">
-											<String></String>
-										</field>
-										<field name="accelerator">
-											<null/>
-										</field>
-										<field name="actionModes">
-											<actionMode-array>
-												<actionMode>
-													<field name="xpathCondition">
-														<String>ancestor-or-self::*[
-	contains(@class, ' topic/example ') or 
-	contains(@class, ' topic/section ')
-][./*[contains(@class, ' topic/title ')]] </String>
-													</field>
-													<field name="argValues">
-														<serializableOrderedMap>
-															<entry>
-																<String>fragment</String>
-																<String>&lt;data name="oxy:question">${caret}&lt;/data>
-</String>
-															</entry>
-															<entry>
-																<String>insertLocation</String>
-																<String>ancestor-or-self::*[
-	contains(@class, ' topic/example ') or 
-	contains(@class, ' topic/section ')
-]/*[contains(@class, ' topic/title ')]</String>
-															</entry>
-															<entry>
-																<String>insertPosition</String>
-																<String>After</String>
-															</entry>
-														</serializableOrderedMap>
-													</field>
-													<field name="operationID">
-														<String>ro.sync.ecss.extensions.commons.operations.InsertFragmentOperation</String>
-													</field>
-												</actionMode>
-												<actionMode>
-													<field name="xpathCondition">
-														<String>ancestor-or-self::*[
-	contains(@class, ' topic/example ') or 
-	contains(@class, ' topic/section ')
-]</String>
-													</field>
-													<field name="argValues">
-														<serializableOrderedMap>
-															<entry>
-																<String>fragment</String>
-																<String>&lt;data name="oxy:question">${caret}&lt;/data>
-</String>
-															</entry>
-															<entry>
-																<String>insertLocation</String>
-																<String>ancestor-or-self::*[
-	contains(@class, ' topic/example ') or 
-	contains(@class, ' topic/section ')
-]</String>
-															</entry>
-															<entry>
-																<String>insertPosition</String>
-																<String>Inside as first child</String>
-															</entry>
-														</serializableOrderedMap>
-													</field>
-													<field name="operationID">
-														<String>ro.sync.ecss.extensions.commons.operations.InsertFragmentOperation</String>
-													</field>
-												</actionMode>
-												<actionMode>
-													<field name="xpathCondition">
-														<String>ancestor-or-self::*[
-	contains(@class, ' topic/p ') or 
-	contains(@class, ' topic/div ') or 
-	contains(@class, ' topic/ol ') or 
-	contains(@class, ' topic/ul ') 
-]</String>
-													</field>
-													<field name="argValues">
-														<serializableOrderedMap>
-															<entry>
-																<String>fragment</String>
-																<String>&lt;data name="oxy:question">${caret}&lt;/data>
-</String>
-															</entry>
-															<entry>
-																<String>insertLocation</String>
-																<String>ancestor-or-self::*[
-	contains(@class, ' topic/p ') or 
-	contains(@class, ' topic/div ') or 
-	contains(@class, ' topic/ol ') or 
-	contains(@class, ' topic/ul ') 
-]</String>
-															</entry>
-															<entry>
-																<String>insertPosition</String>
-																<String>Inside as first child</String>
-															</entry>
-														</serializableOrderedMap>
-													</field>
-													<field name="operationID">
-														<String>ro.sync.ecss.extensions.commons.operations.InsertFragmentOperation</String>
-													</field>
-												</actionMode>
-												<actionMode>
-													<field name="xpathCondition">
-														<String>/*[contains(@class, ' topic/topic ')]/*[contains(@class, ' topic/prolog ')]/*[contains(@class, ' topic/metadata ')]</String>
-													</field>
-													<field name="argValues">
-														<serializableOrderedMap>
-															<entry>
-																<String>fragment</String>
-																<String>&lt;data name="oxy:question">${caret}&lt;/data></String>
-															</entry>
-															<entry>
-																<String>insertLocation</String>
-																<String>/*[contains(@class, ' topic/topic ')]/*[contains(@class, ' topic/prolog ')]/*[contains(@class, ' topic/metadata ')]</String>
-															</entry>
-															<entry>
-																<String>insertPosition</String>
-																<String>Inside as last child</String>
-															</entry>
-														</serializableOrderedMap>
-													</field>
-													<field name="operationID">
-														<String>ro.sync.ecss.extensions.commons.operations.InsertFragmentOperation</String>
-													</field>
-												</actionMode>
-												<actionMode>
-													<field name="xpathCondition">
-														<String>/*[contains(@class, ' topic/topic ')]/*[contains(@class, ' topic/prolog ')]</String>
-													</field>
-													<field name="argValues">
-														<serializableOrderedMap>
-															<entry>
-																<String>fragment</String>
-																<String>&lt;metadata>
-                  &lt;data name="oxy:question">${caret}&lt;/data>
-                  &lt;/metadata></String>
-															</entry>
-															<entry>
-																<String>insertLocation</String>
-																<String>/*[contains(@class, ' topic/topic ')]/*[contains(@class, ' topic/prolog ')]</String>
-															</entry>
-															<entry>
-																<String>insertPosition</String>
-																<String>Inside as last child</String>
-															</entry>
-														</serializableOrderedMap>
-													</field>
-													<field name="operationID">
-														<String>ro.sync.ecss.extensions.commons.operations.InsertFragmentOperation</String>
-													</field>
-												</actionMode>
-												<actionMode>
-													<field name="xpathCondition">
-
-														<String>oxy:allows-child-element("*", "class", " topic/image ") or ancestor-or-self::hazardstatement</String>
-													</field>
-													<field name="argValues">
-														<serializableOrderedMap>
-															<entry>
-																<String>fragment</String>
-																<String>&lt;prolog>
-                  &lt;metadata>
-                  &lt;data name="oxy:question">${caret}&lt;/data>
-                  &lt;/metadata>
-                  &lt;/prolog></String>
-															</entry>
-															<entry>
-																<String>insertLocation</String>
-																<String>/*[contains(@class, ' topic/topic ')]</String>
-															</entry>
-															<entry>
-																<String>insertPosition</String>
-																<String>Inside as first child</String>
-															</entry>
-														</serializableOrderedMap>
-													</field>
-													<field name="operationID">
-														<String>ro.sync.ecss.extensions.commons.operations.InsertFragmentOperation</String>
 													</field>
 												</actionMode>
 											</actionMode-array>
