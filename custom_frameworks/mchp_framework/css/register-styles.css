@@ -2,6 +2,11 @@
   content: '';
 }
 
+*[class~='sidsc-register/registerNameMore']:before, *[class~='sidsc-register/registerNameFull']:before,
+ *[class~='sidsc-bitField/bitFieldBriefDescription']:before{ 
+  content: '';
+}
+
 *[class~='sidsc-register/registerNameMore'] {
  display : table-row ;
 border-collapse : collapse ;
@@ -19,6 +24,8 @@ margin-bottom : 0.5em ;
 margin-left : 0 ;
 vertical-align : middle ;
 }
+
+
 
 register > registerName:after(201) {
     display: inline;
@@ -83,6 +90,15 @@ registerProperties > registerPropset > addressOffset:after(201) {
     content: oxy_htmlContent(href, 'register-hints.html', id, oxy_concat('register-hints', '-', oxy_local-name()));
   }
   
+registerProperties > registerPropset > registerAccess:after(201) {
+    display: inline;
+    font-family: arial, helvetica, sans-serif;
+    line-height: 1rem;
+    margin-top: 0.4em;
+    margin-bottom: 0.2em;
+    content: oxy_htmlContent(href, 'register-hints.html', id, oxy_concat('register-hints', '-', oxy_local-name()));
+  }
+
 registerProperties > registerPropset > registerSize:after(201) {
     display: inline;
     font-family: arial, helvetica, sans-serif;
@@ -208,6 +224,15 @@ bitFieldProperties:before(201) {
     margin-bottom: 0.2em;
     content: oxy_htmlContent(href, 'register-hints.html', id, oxy_concat('register-hints', '-', oxy_local-name()));
   }
+  
+bitFieldPropset > bitNumbers:after(201) {
+    display: inline;
+    font-family: arial, helvetica, sans-serif;
+    line-height: 1rem;
+    margin-top: 0.4em;
+    margin-bottom: 0.2em;
+    content: oxy_htmlContent(href, 'register-hints.html', id, oxy_concat('register-hints', '-', oxy_local-name()));
+  }  
   
 bitFieldPropset > bitWidth:after(201) {
     display: inline;

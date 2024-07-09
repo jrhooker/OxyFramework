@@ -1,0 +1,324 @@
+
+
+*[class~='sidsc-register/registerNameMore'] {
+ display : table-row ;
+border-collapse : collapse ;
+border-bottom-width : thin ;
+border-bottom-style : solid ;
+border-left-width : thin ;
+border-left-style : solid ;
+border-right-width : thin ;
+border-right-style : solid ;
+border-top-width : thin ;
+border-top-style : solid ;
+margin-top : 0.5em ;
+margin-right : 0 ;
+margin-bottom : 0.5em ;
+margin-left : 0 ;
+vertical-align : middle ;
+}
+
+*[class~='frmwrStruct/structNameMore']:before, *[class~='frmwrStruct/structNameFull']:before,
+ *[class~='structDword/dwordBriefDescription']:before{ 
+  content: '';
+}
+
+frmwrComponent > frmwrName:before(201) {
+    display: inline;
+    font-family: arial, helvetica, sans-serif;
+    line-height: 1rem;
+    margin-top: 0.4em;
+    margin-bottom: 0.2em;
+    content: oxy_htmlContent(href, 'firmware-hints.html', id, oxy_concat('firmware-hints', '-', oxy_local-name()));
+  }
+  
+frmwrComponent > frmwrBody:before(201) {
+    display: inline;
+    font-family: arial, helvetica, sans-serif;
+    line-height: 1rem;
+    margin-top: 0.4em;
+    margin-bottom: 0.2em;
+    content: oxy_htmlContent(href, 'firmware-hints.html', id, oxy_concat('firmware-hints', '-', oxy_local-name()));
+  }
+
+frmwrBody > frmwrDescription:before(201) {
+    display: inline;
+    font-family: arial, helvetica, sans-serif;
+    line-height: 1rem;
+    margin-top: 0.4em;
+    margin-bottom: 0.2em;
+    content: oxy_htmlContent(href, 'firmware-hints.html', id, oxy_concat('firmware-hints', '-', oxy_local-name()));
+  }  
+  
+frmwrBody > frmwrEnumvalue:before(201) {
+    display: inline;
+    font-family: arial, helvetica, sans-serif;
+    line-height: 1rem;
+    margin-top: 0.4em;
+    margin-bottom: 0.2em;
+    content: oxy_htmlContent(href, 'firmware-hints.html', id, oxy_concat('firmware-hints', '-', oxy_local-name()));
+  }  
+  
+frmwrBody > frmwrIncludelist:before(201) {
+    display: inline;
+    font-family: arial, helvetica, sans-serif;
+    line-height: 1rem;
+    margin-top: 0.4em;
+    margin-bottom: 0.2em;
+    content: oxy_htmlContent(href, 'firmware-hints.html', id, oxy_concat('firmware-hints', '-', oxy_local-name()));
+  }  
+  
+frmwrIncludelist > frmwrIncludeName:before(201) {
+    display: inline;
+    font-family: arial, helvetica, sans-serif;
+    line-height: 1rem;
+    margin-top: 0.4em;
+    margin-bottom: 0.2em;
+    content: oxy_htmlContent(href, 'firmware-hints.html', id, oxy_concat('firmware-hints', '-', oxy_local-name()));
+  }  
+  
+frmwrIncludelist > frmwrIncludeDesc:before(201) {
+    display: inline;
+    font-family: arial, helvetica, sans-serif;
+    line-height: 1rem;
+    margin-top: 0.4em;
+    margin-bottom: 0.2em;
+    content: oxy_htmlContent(href, 'firmware-hints.html', id, oxy_concat('firmware-hints', '-', oxy_local-name()));
+  }  
+  
+frmwrStruct > structName:before(201) {
+    display: inline;
+    font-family: arial, helvetica, sans-serif;
+    line-height: 1rem;
+    margin-top: 0.4em;
+    margin-bottom: 0.2em;
+    content: oxy_htmlContent(href, 'firmware-hints.html', id, oxy_concat('firmware-hints', '-', oxy_local-name()));
+  }  
+    
+frmwrStruct > structNameMore:before(201) {
+    display: inline;
+    font-family: arial, helvetica, sans-serif;
+    line-height: 1rem;
+    margin-top: 0.4em;
+    margin-bottom: 0.2em;
+    content: oxy_htmlContent(href, 'firmware-hints.html', id, oxy_concat('firmware-hints', '-', oxy_local-name()));
+  }  
+  
+structNameMore > structNameFull:before(201) {
+    display: inline;
+    font-family: arial, helvetica, sans-serif;
+    line-height: 1rem;
+    margin-top: 0.4em;
+    margin-bottom: 0.2em;
+    content: oxy_htmlContent(href, 'firmware-hints.html', id, oxy_concat('firmware-hints', '-', oxy_local-name()));
+  }  
+  
+structNameMore > structNameDescription:before(201) {
+    display: inline;
+    font-family: arial, helvetica, sans-serif;
+    line-height: 1rem;
+    margin-top: 0.4em;
+    margin-bottom: 0.2em;
+    content: oxy_htmlContent(href, 'firmware-hints.html', id, oxy_concat('firmware-hints', '-', oxy_local-name()));
+  }  
+  
+frmwrStruct > structBody:before(201) {
+    display: inline;
+    font-family: arial, helvetica, sans-serif;
+    line-height: 1rem;
+    margin-top: 0.4em;
+    margin-bottom: 0.2em;
+    content: oxy_htmlContent(href, 'firmware-hints.html', id, oxy_concat('firmware-hints', '-', oxy_local-name()));
+  }  
+  
+  
+structBody > structDescription:before(201) {
+    display: inline;
+    font-family: arial, helvetica, sans-serif;
+    line-height: 1rem;
+    margin-top: 0.4em;
+    margin-bottom: 0.2em;
+    content: oxy_htmlContent(href, 'firmware-hints.html', id, oxy_concat('firmware-hints', '-', oxy_local-name()));
+  }  
+  
+structBody > structProperties:before(201) {
+    display: inline;
+    font-family: arial, helvetica, sans-serif;
+    line-height: 1rem;
+    margin-top: 0.4em;
+    margin-bottom: 0.2em;
+    content: oxy_htmlContent(href, 'firmware-hints.html', id, oxy_concat('firmware-hints', '-', oxy_local-name()));
+  }  
+  
+structProperties > structPropset:before(201) {
+    display: inline;
+    font-family: arial, helvetica, sans-serif;
+    line-height: 1rem;
+    margin-top: 0.4em;
+    margin-bottom: 0.2em;
+    content: oxy_htmlContent(href, 'firmware-hints.html', id, oxy_concat('firmware-hints', '-', oxy_local-name()));
+  }    
+  
+structPropset > structOpcode:before(201) {
+    display: inline;
+    font-family: arial, helvetica, sans-serif;
+    line-height: 1rem;
+    margin-top: 0.4em;
+    margin-bottom: 0.2em;
+    content: oxy_htmlContent(href, 'firmware-hints.html', id, oxy_concat('firmware-hints', '-', oxy_local-name()));
+  }  
+  
+structPropset > structType:before(201) {
+    display: inline;
+    font-family: arial, helvetica, sans-serif;
+    line-height: 1rem;
+    margin-top: 0.4em;
+    margin-bottom: 0.2em;
+    content: oxy_htmlContent(href, 'firmware-hints.html', id, oxy_concat('firmware-hints', '-', oxy_local-name()));
+  }  
+  
+frmwrStruct > structDword:before(201) {
+    display: inline;
+    font-family: arial, helvetica, sans-serif;
+    line-height: 1rem;
+    margin-top: 0.4em;
+    margin-bottom: 0.2em;
+    content: oxy_htmlContent(href, 'firmware-hints.html', id, oxy_concat('firmware-hints', '-', oxy_local-name()));
+  }  
+  
+structDword > dwordName:before(201) {
+    display: inline;
+    font-family: arial, helvetica, sans-serif;
+    line-height: 1rem;
+    margin-top: 0.4em;
+    margin-bottom: 0.2em;
+    content: oxy_htmlContent(href, 'firmware-hints.html', id, oxy_concat('firmware-hints', '-', oxy_local-name()));
+  }  
+  
+structDword > dwordBriefDescription:before(201) {
+    display: inline;
+    font-family: arial, helvetica, sans-serif;
+    line-height: 1rem;
+    margin-top: 0.4em;
+    margin-bottom: 0.2em;
+    content: oxy_htmlContent(href, 'firmware-hints.html', id, oxy_concat('firmware-hints', '-', oxy_local-name()));
+  }  
+  
+structDword > dwordBody:before(201) {
+    display: inline;
+    font-family: arial, helvetica, sans-serif;
+    line-height: 1rem;
+    margin-top: 0.4em;
+    margin-bottom: 0.2em;
+    content: oxy_htmlContent(href, 'firmware-hints.html', id, oxy_concat('firmware-hints', '-', oxy_local-name()));
+  }  
+  
+dwordBody > dwordDescription:before(201) {
+    display: inline;
+    font-family: arial, helvetica, sans-serif;
+    line-height: 1rem;
+    margin-top: 0.4em;
+    margin-bottom: 0.2em;
+    content: oxy_htmlContent(href, 'firmware-hints.html', id, oxy_concat('firmware-hints', '-', oxy_local-name()));
+  }  
+  
+dwordBody > dwordProperties:before(201) {
+    display: inline;
+    font-family: arial, helvetica, sans-serif;
+    line-height: 1rem;
+    margin-top: 0.4em;
+    margin-bottom: 0.2em;
+    content: oxy_htmlContent(href, 'firmware-hints.html', id, oxy_concat('firmware-hints', '-', oxy_local-name()));
+  }  
+  
+dwordProperties > dwordPropset:before(201) {
+    display: inline;
+    font-family: arial, helvetica, sans-serif;
+    line-height: 1rem;
+    margin-top: 0.4em;
+    margin-bottom: 0.2em;
+    content: oxy_htmlContent(href, 'firmware-hints.html', id, oxy_concat('firmware-hints', '-', oxy_local-name()));
+  }  
+  
+dwordPropset > dwordWidth:before(201) {
+    display: inline;
+    font-family: arial, helvetica, sans-serif;
+    line-height: 1rem;
+    margin-top: 0.4em;
+    margin-bottom: 0.2em;
+    content: oxy_htmlContent(href, 'firmware-hints.html', id, oxy_concat('firmware-hints', '-', oxy_local-name()));
+  }  
+  
+dwordPropset > dwordOffset:before(201) {
+    display: inline;
+    font-family: arial, helvetica, sans-serif;
+    line-height: 1rem;
+    margin-top: 0.4em;
+    margin-bottom: 0.2em;
+    content: oxy_htmlContent(href, 'firmware-hints.html', id, oxy_concat('firmware-hints', '-', oxy_local-name()));
+  }  
+  
+dwordPropset > dwordNumberWidth:before(201) {
+    display: inline;
+    font-family: arial, helvetica, sans-serif;
+    line-height: 1rem;
+    margin-top: 0.4em;
+    margin-bottom: 0.2em;
+    content: oxy_htmlContent(href, 'firmware-hints.html', id, oxy_concat('firmware-hints', '-', oxy_local-name()));
+  }  
+  
+dwordPropset > dwordNumberOffset:before(201) {
+    display: inline;
+    font-family: arial, helvetica, sans-serif;
+    line-height: 1rem;
+    margin-top: 0.4em;
+    margin-bottom: 0.2em;
+    content: oxy_htmlContent(href, 'firmware-hints.html', id, oxy_concat('firmware-hints', '-', oxy_local-name()));
+  }  
+  
+dwordBody > dwordValues:before(201) {
+    display: inline;
+    font-family: arial, helvetica, sans-serif;
+    line-height: 1rem;
+    margin-top: 0.4em;
+    margin-bottom: 0.2em;
+    content: oxy_htmlContent(href, 'firmware-hints.html', id, oxy_concat('firmware-hints', '-', oxy_local-name()));
+  }  
+  
+dwordValues > dwordValueGroup:before(201) {
+    display: inline;
+    font-family: arial, helvetica, sans-serif;
+    line-height: 1rem;
+    margin-top: 0.4em;
+    margin-bottom: 0.2em;
+    content: oxy_htmlContent(href, 'firmware-hints.html', id, oxy_concat('firmware-hints', '-', oxy_local-name()));
+  }
+  
+dwordValueGroup > dwordValue:before(201) {
+    display: inline;
+    font-family: arial, helvetica, sans-serif;
+    line-height: 1rem;
+    margin-top: 0.4em;
+    margin-bottom: 0.2em;
+    content: oxy_htmlContent(href, 'firmware-hints.html', id, oxy_concat('firmware-hints', '-', oxy_local-name()));
+  }    
+  
+dwordValueGroup > dwordValueName:before(201) {
+    display: inline;
+    font-family: arial, helvetica, sans-serif;
+    line-height: 1rem;
+    margin-top: 0.4em;
+    margin-bottom: 0.2em;
+    content: oxy_htmlContent(href, 'firmware-hints.html', id, oxy_concat('firmware-hints', '-', oxy_local-name()));
+  }    
+  
+dwordValueGroup > dwordValueDescription:before(201) {
+    display: inline;
+    font-family: arial, helvetica, sans-serif;
+    line-height: 1rem;
+    margin-top: 0.4em;
+    margin-bottom: 0.2em;
+    content: oxy_htmlContent(href, 'firmware-hints.html', id, oxy_concat('firmware-hints', '-', oxy_local-name()));
+  }    
+  
+  

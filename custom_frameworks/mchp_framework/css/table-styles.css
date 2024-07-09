@@ -2,9 +2,6 @@
   background-color: #eaeaea;
   }
 
-
-
-
 *[class~='topic/table'][outputclass~='nozebra']:before {    
     content: oxy_htmlContent(href, 'table-hints.html', id, oxy_concat('table-hints', '-nozebra'));
   }
