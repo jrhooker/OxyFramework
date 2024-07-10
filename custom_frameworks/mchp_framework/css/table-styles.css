@@ -10,17 +10,57 @@
   background-color: #ffffff;
   }
   
-  *[class~='topic/table'][outputclass~='headercolumn'] {
-
+   *[class~='topic/table'][scale] {
+  }
+  
+ *[class~='topic/table'][scale]:before { 
+  color: yellow;
+    content: oxy_htmlContent(href, 'table-hints.html', id, oxy_concat('table-hints', '-scale'));
+  }
+    
+  *[class~='topic/table'][outputclass~='nocolor'] {
+  }
+  
+ *[class~='topic/table'][outputclass~='nocolor']:before { 
+  color: yellow;
+    content: oxy_htmlContent(href, 'table-hints.html', id, oxy_concat('table-hints', '-nocolor'));
+  }
+  
+  *[class~='topic/table'][outputclass~='compact'] {
+  }
+  
+ *[class~='topic/table'][outputclass~='compact']:before { 
+  color: yellow;
+    content: oxy_htmlContent(href, 'table-hints.html', id, oxy_concat('table-hints', '-compact'));
+  }
+  
+  *[class~='topic/table'][frame~='none'] {
+  }
+  
+ *[class~='topic/table'][frame~='none']:before { 
+  color: yellow;
+    content: oxy_htmlContent(href, 'table-hints.html', id, oxy_concat('table-hints', '-frame'));
+  }
+  
+  
+   *[class~='topic/table'][outputclass~='headercolumn'] {
   }
   
  *[class~='topic/table'][outputclass~='headercolumn']:before { 
   color: yellow;
     content: oxy_htmlContent(href, 'table-hints.html', id, oxy_concat('table-hints', '-headercolumn'));
   }
+  
+  
+    *[class~='topic/table'][outputclass~='fitcontent'] {
+  }
+  
+   *[class~='topic/table'][outputclass~='fitcontent']:before {
+    content: oxy_htmlContent(href, 'table-hints.html', id, oxy_concat('table-hints', '-fitcontent'));
+  }
+  
  
   *[class~='topic/table'][outputclass~='widetable'] {
- background-color : #b7b7b7 ;
   }
   
    *[class~='topic/table'][outputclass~='widetable']:before {
