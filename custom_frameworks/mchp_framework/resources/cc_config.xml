@@ -23,5 +23,7 @@
 	<elementProposals path="entry" insertElements="p"></elementProposals>	
 	
 	<elementProposals path="section" insertElements="title p"></elementProposals>	
+	
+	
 
 </config>

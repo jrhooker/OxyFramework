@@ -37,7 +37,7 @@
 											<Integer>0</Integer>
 										</field>
 										<field name="value">
-											<String>${framework}\resources</String>
+											<String>${framework}/resources</String>
 										</field>
 										<field name="patchHandling">
 											<String>addIndex</String>
