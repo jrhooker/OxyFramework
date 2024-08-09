@@ -8,6 +8,8 @@
 	xsi:schemaLocation="http://www.oxygenxml.com/ns/ccfilter/config http://www.oxygenxml.com/ns/ccfilter/config/ccConfigSchemaFilter.xsd"
 	xmlns="http://www.oxygenxml.com/ns/ccfilter/config">
 
+<!-- SIDSC templates -->
+
     <elementProposals path="dimension" insertElements="dimensionValue dimensionIncrement namePattern"></elementProposals>
 	
 	<elementProposals path="bitFieldProperties" insertElements="bitFieldPropset"></elementProposals>
@@ -15,5 +17,11 @@
 	<elementProposals path="bitFieldPropset" insertElements="bitWidth bitFieldAccess bitFieldReset"></elementProposals>
 	
 	<elementProposals path="bitFieldReset" insertElements="bitFieldResetValue"></elementProposals>	
+	
+<!-- Basic DITA templates -->	
+	
+	<elementProposals path="entry" insertElements="p"></elementProposals>	
+	
+	<elementProposals path="section" insertElements="title p"></elementProposals>	
 
 </config>

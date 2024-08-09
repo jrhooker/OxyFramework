@@ -56,88 +56,7 @@
 										<field name="value">
 											<cssFile>
 												<field name="href">
-													<String>${framework}/css/table-styles.css</String>
-												</field>
-												<field name="title">
-													<String></String>
-												</field>
-												<field name="alternate">
-													<Boolean>false</Boolean>
-												</field>
-											</cssFile>
-										</field>
-										<field name="patchHandling">
-											<String>addIndex</String>
-										</field>
-										<field name="anchor">
-											<null/>
-										</field>
-									</poPatch>
-									<poPatch>
-										<field name="fieldPath">
-											<String>authorExtensionDescriptor/cssDescriptors</String>
-										</field>
-										<field name="index">
-											<Integer>14</Integer>
-										</field>
-										<field name="value">
-											<cssFile>
-												<field name="href">
-													<String>${framework}/css/note-styles.css</String>
-												</field>
-												<field name="title">
-													<String></String>
-												</field>
-												<field name="alternate">
-													<Boolean>false</Boolean>
-												</field>
-											</cssFile>
-										</field>
-										<field name="patchHandling">
-											<String>addIndex</String>
-										</field>
-										<field name="anchor">
-											<null/>
-										</field>
-									</poPatch>
-									<poPatch>
-										<field name="fieldPath">
-											<String>authorExtensionDescriptor/cssDescriptors</String>
-										</field>
-										<field name="index">
-											<Integer>15</Integer>
-										</field>
-										<field name="value">
-											<cssFile>
-												<field name="href">
-													<String>${framework}/css/register-styles.css</String>
-												</field>
-												<field name="title">
-													<String></String>
-												</field>
-												<field name="alternate">
-													<Boolean>false</Boolean>
-												</field>
-											</cssFile>
-										</field>
-										<field name="patchHandling">
-											<String>addIndex</String>
-										</field>
-										<field name="anchor">
-											<null/>
-										</field>
-									</poPatch>
-									<poPatch>
-										<field name="fieldPath">
-											<String>authorExtensionDescriptor/cssDescriptors</String>
-										</field>
-										<field name="index">
-											<Integer>16</Integer>
-										</field>
-										<field name="value">
-											<cssFile>
-												<field name="href">
-													<String>${framework}/css/firmware-styles.css</String>
+													<String>${framework}/css/microchip-style.css</String>
 												</field>
 												<field name="title">
 													<String></String>
@@ -203,7 +122,7 @@
                 &lt;/thead>
                 &lt;tbody>
                     &lt;row>
-                        &lt;entry>&lt;/entry> &lt;entry>&lt;/entry> &lt;entry>&lt;/entry>
+                        &lt;entry>&lt;p>&lt;/p>&lt;/entry> &lt;entry>&lt;p>&lt;/p>&lt;/entry> &lt;entry>&lt;p>&lt;/p>&lt;/entry>
                     &lt;/row>
                 &lt;/tbody>
             &lt;/tgroup>
@@ -273,12 +192,12 @@
             &lt;tgroup cols="3">
                 &lt;thead>
                     &lt;row>
-                        &lt;entry>&lt;/entry> &lt;entry>&lt;/entry> &lt;entry>&lt;/entry>
+                        &lt;entry>&lt;p>&lt;/p>&lt;/entry> &lt;entry>&lt;p>&lt;/p>&lt;/entry> &lt;entry>&lt;p>&lt;/p>&lt;/entry>
                     &lt;/row>
                 &lt;/thead>
                 &lt;tbody>
                     &lt;row>
-                        &lt;entry>&lt;/entry> &lt;entry>&lt;/entry> &lt;entry>&lt;/entry>
+                        &lt;entry>&lt;p>&lt;/p>&lt;/entry> &lt;entry>&lt;p>&lt;/p>&lt;/entry> &lt;entry>&lt;p>&lt;/p>&lt;/entry>
                     &lt;/row>
                 &lt;/tbody>
             &lt;/tgroup>
@@ -353,7 +272,7 @@
                 &lt;/thead>
                 &lt;tbody>
                     &lt;row>
-                        &lt;entry>&lt;/entry> &lt;entry>&lt;/entry> &lt;entry>&lt;/entry>
+                        &lt;entry>&lt;p>&lt;/p>&lt;/entry> &lt;entry>&lt;p>&lt;/p>&lt;/entry> &lt;entry>&lt;p>&lt;/p>&lt;/entry>
                     &lt;/row>
                 &lt;/tbody>
             &lt;/tgroup>
@@ -428,7 +347,7 @@
                 &lt;/thead>
                 &lt;tbody>
                     &lt;row>
-                        &lt;entry>&lt;/entry> &lt;entry>&lt;/entry> &lt;entry>&lt;/entry>
+                        &lt;entry>&lt;p>&lt;/p>&lt;/entry> &lt;entry>&lt;p>&lt;/p>&lt;/entry> &lt;entry>&lt;p>&lt;/p>&lt;/entry>
                     &lt;/row>
                 &lt;/tbody>
             &lt;/tgroup>
@@ -498,12 +417,12 @@
             &lt;tgroup cols="3">
                 &lt;thead>
                     &lt;row>
-                        &lt;entry>&lt;/entry> &lt;entry>&lt;/entry> &lt;entry>&lt;/entry>
+                        &lt;entry>&lt;p>&lt;/p>&lt;/entry> &lt;entry>&lt;p>&lt;/p>&lt;/entry> &lt;entry>&lt;p>&lt;/p>&lt;/entry>
                     &lt;/row>
                 &lt;/thead>
                 &lt;tbody>
                     &lt;row>
-                        &lt;entry>&lt;/entry> &lt;entry>&lt;/entry> &lt;entry>&lt;/entry>
+                        &lt;entry>&lt;p>&lt;/p>&lt;/entry> &lt;entry>&lt;p>&lt;/p>&lt;/entry> &lt;entry>&lt;p>&lt;/p>&lt;/entry>
                     &lt;/row>
                 &lt;/tbody>
             &lt;/tgroup>
@@ -578,7 +497,7 @@
                 &lt;/thead>
                 &lt;tbody>
                     &lt;row>
-                        &lt;entry>&lt;/entry> &lt;entry>&lt;/entry> &lt;entry>&lt;/entry>
+                        &lt;entry>&lt;p>&lt;/p>&lt;/entry> &lt;entry>&lt;p>&lt;/p>&lt;/entry> &lt;entry>&lt;p>&lt;/p>&lt;/entry>
                     &lt;/row>
                 &lt;/tbody>
             &lt;/tgroup>
@@ -653,7 +572,7 @@
                 &lt;/thead>
                 &lt;tbody>
                     &lt;row>
-                        &lt;entry>&lt;/entry> &lt;entry>&lt;/entry> &lt;entry>&lt;/entry>
+                        &lt;entry>&lt;p>&lt;/p>&lt;/entry> &lt;entry>&lt;p>&lt;/p>&lt;/entry> &lt;entry>&lt;p>&lt;/p>&lt;/entry>
                     &lt;/row>
                 &lt;/tbody>
             &lt;/tgroup>
@@ -685,86 +604,6 @@
 										</field>
 										<field name="index">
 											<Integer>99</Integer>
-										</field>
-										<field name="value">
-											<action>
-												<field name="id">
-													<String>mchp.edit.attributes</String>
-												</field>
-												<field name="name">
-													<String>Edit Attributes</String>
-												</field>
-												<field name="description">
-													<String></String>
-												</field>
-												<field name="largeIconPath">
-													<String></String>
-												</field>
-												<field name="smallIconPath">
-													<String></String>
-												</field>
-												<field name="accessKey">
-													<String></String>
-												</field>
-												<field name="accelerator">
-													<null/>
-												</field>
-												<field name="actionModes">
-													<actionMode-array>
-														<actionMode>
-															<field name="xpathCondition">
-																<String></String>
-															</field>
-															<field name="argValues">
-																<serializableOrderedMap>
-																	<entry>
-																		<String>script</String>
-																		<String>function doOperation() {
-    keys = Packages.java.lang.reflect.Array.newInstance(java.lang.String, 3);
-    keys[0] = "k1";
-    keys[1] = "k2";
-    keys[2] = "k3";
-    //Ask user for new value for key attribute.
-    newKeyValue = Packages.javax.swing.JOptionPane.showInputDialog
-    (null, "Input key value",
-        "Key Value",
-        Packages.javax.swing.JOptionPane.QUESTION_MESSAGE, 
-        null, 
-        keys, 
-        keys[0]);
-    if (newKeyValue != null) {
-        authorAccess.getDocumentController().insertXMLFragment
-        ("&lt;part key='" + newKeyValue + "' count='' pname=''/>", authorAccess.getEditorAccess().getCaretOffset());
-    }
-}
-</String>
-																	</entry>
-																</serializableOrderedMap>
-															</field>
-															<field name="operationID">
-																<String>ro.sync.ecss.extensions.commons.operations.JSOperation</String>
-															</field>
-														</actionMode>
-													</actionMode-array>
-												</field>
-												<field name="enabledInReadOnlyContext">
-													<Boolean>false</Boolean>
-												</field>
-											</action>
-										</field>
-										<field name="patchHandling">
-											<String>addIndex</String>
-										</field>
-										<field name="anchor">
-											<null/>
-										</field>
-									</poPatch>
-									<poPatch>
-										<field name="fieldPath">
-											<String>authorExtensionDescriptor/actionDescriptors</String>
-										</field>
-										<field name="index">
-											<Integer>100</Integer>
 										</field>
 										<field name="value">
 											<action>
@@ -837,6 +676,71 @@
 															</field>
 															<field name="operationID">
 																<String></String>
+															</field>
+														</actionMode>
+													</actionMode-array>
+												</field>
+												<field name="enabledInReadOnlyContext">
+													<Boolean>false</Boolean>
+												</field>
+											</action>
+										</field>
+										<field name="patchHandling">
+											<String>addIndex</String>
+										</field>
+										<field name="anchor">
+											<null/>
+										</field>
+									</poPatch>
+									<poPatch>
+										<field name="fieldPath">
+											<String>authorExtensionDescriptor/actionDescriptors</String>
+										</field>
+										<field name="index">
+											<Integer>100</Integer>
+										</field>
+										<field name="value">
+											<action>
+												<field name="id">
+													<String>mchp.insert.section.with.title</String>
+												</field>
+												<field name="name">
+													<String>Insert Section w/Title</String>
+												</field>
+												<field name="description">
+													<String>An action to override the default action an include a title in a section element automatically.</String>
+												</field>
+												<field name="largeIconPath">
+													<String></String>
+												</field>
+												<field name="smallIconPath">
+													<String></String>
+												</field>
+												<field name="accessKey">
+													<String></String>
+												</field>
+												<field name="accelerator">
+													<null/>
+												</field>
+												<field name="actionModes">
+													<actionMode-array>
+														<actionMode>
+															<field name="xpathCondition">
+																<String>oxy:allows-child-element("*", "class", "topic/section")</String>
+															</field>
+															<field name="argValues">
+																<serializableOrderedMap>
+																	<entry>
+																		<String>fragment</String>
+																		<String>&lt;section>
+  &lt;title>&lt;/title>
+  
+&lt;/section></String>
+																	</entry>
+																</serializableOrderedMap>
+															</field>
+															<field name="operationID">
+																<String>ro.sync.ecss.extensions.commons.operations.InsertFragmentOperation</String>
 															</field>
 														</actionMode>
 													</actionMode-array>
@@ -1315,6 +1219,47 @@
 													</toolbarEntry-array>
 												</field>
 											</toolbar>
+										</field>
+										<field name="patchHandling">
+											<String>addIndex</String>
+										</field>
+										<field name="anchor">
+											<null/>
+										</field>
+									</poPatch>
+									<poPatch>
+										<field name="fieldPath">
+											<String>authorExtensionDescriptor/contextualItems/items</String>
+										</field>
+										<field name="index">
+											<Integer>0</Integer>
+										</field>
+										<field name="value">
+											<contextItem>
+												<field name="targets">
+													<list>
+														<Integer>0</Integer>
+													</list>
+												</field>
+												<field name="actionID">
+													<String>mchp.insert.section.with.title</String>
+												</field>
+												<field name="alias">
+													<null/>
+												</field>
+												<field name="replacementFor">
+													<null/>
+												</field>
+												<field name="replacedElementNs">
+													<String></String>
+												</field>
+												<field name="displayOnlyWhenElementAllowed">
+													<Boolean>false</Boolean>
+												</field>
+												<field name="useReplaceElementName">
+													<Boolean>true</Boolean>
+												</field>
+											</contextItem>
 										</field>
 										<field name="patchHandling">
 											<String>addIndex</String>
