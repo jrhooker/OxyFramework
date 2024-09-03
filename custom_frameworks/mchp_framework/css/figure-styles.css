@@ -1,0 +1,33 @@
+ 
+ 
+   
+   *[class~='topic/fig'][outputclass~='wide'] {
+  background-color: #ffffff;
+  }
+  
+   *[class~='topic/fig'][outputclass~='wide']:before {
+    content: oxy_htmlContent(href, 'figure-hints.html', id, oxy_concat('figure-hints', '-wide'));
+  }
+  
+   *[class~='topic/fig'][outputclass~='rotatepage'] {
+  }
+  
+   *[class~='topic/fig'][outputclass~='rotatepage']:before {
+    content: oxy_htmlContent(href, 'figure-hints.html', id, oxy_concat('figure-hints', '-rotatepage'));
+  } 
+ 
+   *[class~='topic/image'][width~='column '] {
+  background-color: #ffffff;
+  }
+  
+   *[class~='topic/image'][width~='column']:before {
+    content: oxy_htmlContent(href, 'figure-hints.html', id, oxy_concat('image-hints', '-column'));
+  }
+ 
+   *[class~='topic/fig'] {
+  background-color: #ffffff;
+  }
+  
+   *[class~='topic/fig']:before {
+    content: oxy_htmlContent(href, 'figure-hints.html', id, oxy_concat('figure-hints', '-basic'));
+  }

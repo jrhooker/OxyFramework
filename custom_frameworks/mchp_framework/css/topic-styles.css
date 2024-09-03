@@ -1,0 +1,43 @@
+
+a.in-author-help {
+    border-color: red;
+}
+
+
+*[class~='topic/topic']:before(201) {
+    display: inline;
+    font-family: arial, helvetica, sans-serif;
+    line-height: 1rem;
+    margin-top: 0.4em;
+    margin-bottom: 0.2em;
+    content: oxy_htmlContent(href, 'topic-hints.html', id, 'topic-help', width, 100%);
+  } 
+
+  *[class~='sidsc-bitField/bitField']:before(201) {
+    display: inline;
+    font-family: arial, helvetica, sans-serif;
+    line-height: 1rem;
+    margin-top: 0.4em;
+    margin-bottom: 0.2em;
+    content: '';
+  } 
+  
+ *[class~='sidsc-register/register']:before(201) {
+    display: inline;
+    font-family: arial, helvetica, sans-serif;
+    line-height: 1rem;
+    margin-top: 0.4em;
+    margin-bottom: 0.2em;
+    content: oxy_htmlContent(href, 'topic-hints.html', id, 'register-help', width, 100%);
+  } 
+
+  
+ 
+  
+ 
+   
+  
+  
+ 
+  
+  
