@@ -45,6 +45,66 @@ register > registerNameMore:before(201) {
     content: oxy_htmlContent(href, 'register-hints.html', id, oxy_concat('register-hints', '-', oxy_local-name()));
   }
   
+  register > registerNameMore > ipMode:before(201) {
+    display: inline;
+    font-family: arial, helvetica, sans-serif;
+    line-height: 1rem;
+    margin-top: 0.4em;
+    margin-bottom: 0.2em;
+    content: oxy_htmlContent(href, 'register-hints.html', id, oxy_concat('register-hints', '-', oxy_local-name()));
+  }
+  
+    ipMode > ipModeSet:before(201) {
+    display: inline;
+    font-family: arial, helvetica, sans-serif;
+    line-height: 1rem;
+    margin-top: 0.4em;
+    margin-bottom: 0.2em;
+    content: oxy_htmlContent(href, 'register-hints.html', id, oxy_concat('register-hints', '-', oxy_local-name()));
+  }
+  
+      ipMode > ipModeSet > ipModeName:before(201) {
+    display: inline;
+    font-family: arial, helvetica, sans-serif;
+    line-height: 1rem;
+    margin-top: 0.4em;
+    margin-bottom: 0.2em;
+    content: oxy_htmlContent(href, 'register-hints.html', id, oxy_concat('register-hints', '-', oxy_local-name()));
+  }
+  
+    ipMode > ipModeSet > ipModeText:before(201) {
+    display: inline;
+    font-family: arial, helvetica, sans-serif;
+    line-height: 1rem;
+    margin-top: 0.4em;
+    margin-bottom: 0.2em;
+    content: oxy_htmlContent(href, 'register-hints.html', id, oxy_concat('register-hints', '-', oxy_local-name()));
+  }
+    ipMode > ipModeSet > ipModeReg:before(201) {
+    display: inline;
+    font-family: arial, helvetica, sans-serif;
+    line-height: 1rem;
+    margin-top: 0.4em;
+    margin-bottom: 0.2em;
+    content: oxy_htmlContent(href, 'register-hints.html', id, oxy_concat('register-hints', '-', oxy_local-name()));
+  }  
+    ipMode > ipModeSet > ipModeBitField:before(201) {
+    display: inline;
+    font-family: arial, helvetica, sans-serif;
+    line-height: 1rem;
+    margin-top: 0.4em;
+    margin-bottom: 0.2em;
+    content: oxy_htmlContent(href, 'register-hints.html', id, oxy_concat('register-hints', '-', oxy_local-name()));
+  }
+      ipMode > ipModeSet > ipModeValue:before(201) {
+    display: inline;
+    font-family: arial, helvetica, sans-serif;
+    line-height: 1rem;
+    margin-top: 0.4em;
+    margin-bottom: 0.2em;
+    content: oxy_htmlContent(href, 'register-hints.html', id, oxy_concat('register-hints', '-', oxy_local-name()));
+  }  
+  
 registerNameMore > registerNameFull:before(201) {
     display: inline;
     font-family: arial, helvetica, sans-serif;
@@ -62,6 +122,60 @@ registerNameMore > registerBriefDescription:after(201) {
     margin-bottom: 0.2em;
     content: oxy_htmlContent(href, 'register-hints.html', id, oxy_concat('register-hints', '-', oxy_local-name()));
   }
+  
+registerMode:before(201) {
+    display: inline;
+    font-family: arial, helvetica, sans-serif;   
+    content: oxy_htmlContent(href, 'register-hints.html', id, oxy_concat('register-hints', '-', oxy_local-name()));
+  }  
+  
+registerModeName:before(201) {
+    display: inline;
+    font-family: arial, helvetica, sans-serif;   
+    content: oxy_htmlContent(href, 'register-hints.html', id, oxy_concat('register-hints', '-', oxy_local-name()));
+  }  
+
+registerModeMore:before(201) {
+    display: inline;
+    font-family: arial, helvetica, sans-serif;   
+    content: oxy_htmlContent(href, 'register-hints.html', id, oxy_concat('register-hints', '-', oxy_local-name()));
+  }  
+  
+registerModeGroup:before(201) {
+    display: inline;
+    font-family: arial, helvetica, sans-serif;   
+    content: oxy_htmlContent(href, 'register-hints.html', id, oxy_concat('register-hints', '-', oxy_local-name()));
+  }    
+  
+registerModeSet:before(201) {
+    display: inline;
+    font-family: arial, helvetica, sans-serif;   
+    content: oxy_htmlContent(href, 'register-hints.html', id, oxy_concat('register-hints', '-', oxy_local-name()));
+  }    
+  
+registerModeText:before(201) {
+    display: inline;
+    font-family: arial, helvetica, sans-serif;   
+    content: oxy_htmlContent(href, 'register-hints.html', id, oxy_concat('register-hints', '-', oxy_local-name()));
+  }  
+  
+registerModeRegister:before(201) {
+    display: inline;
+    font-family: arial, helvetica, sans-serif;   
+    content: oxy_htmlContent(href, 'register-hints.html', id, oxy_concat('register-hints', '-', oxy_local-name()));
+  }    
+  
+  registerModeBitField:before(201) {
+    display: inline;
+    font-family: arial, helvetica, sans-serif;   
+    content: oxy_htmlContent(href, 'register-hints.html', id, oxy_concat('register-hints', '-', oxy_local-name()));
+  }  
+  
+  registerModeValue:before(201) {
+    display: inline;
+    font-family: arial, helvetica, sans-serif;   
+    content: oxy_htmlContent(href, 'register-hints.html', id, oxy_concat('register-hints', '-', oxy_local-name()));
+  }  
   
 registerBody:before(201) {
     display: inline;
